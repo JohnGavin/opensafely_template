@@ -1,5 +1,11 @@
 # opensafely_template
 
+https://docs.opensafely.org/getting-started
+   opensafely
+   opensafely run run_all
+   opensafely run run_all --force-run-dependencies
+   opensafely unzip output
+
 You can run this project via [Gitpod](https://gitpod.io) in a web browser by clicking on this badge: [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/JohnGavin/opensafely_template)
 
 [View on OpenSAFELY](https://jobs.opensafely.org/repo/https%253A%252F%252Fgithub.com%252Fopensafely%252Fopensafely_template)
