@@ -5,6 +5,23 @@ https://docs.opensafely.org/getting-started
    opensafely run run_all
    opensafely run run_all --force-run-dependencies
    opensafely unzip output
+# opensafely run generate_study_population
+# opensafely run describe
+# retrieve each codelist listed in /codelists/codelists.txt from OpenCodelists. It will add (or update) the codelist .csv files to the codelists/ folder.
+opensafely codelists update
+# check if the codelist files are up-to-date with those listed in ./codelists/codelists.txt.
+# If you have error messages about missing libraries, your Docker images may need upgrading. To pull the most recent Docker images to your machine, run:
+opensafely pull
+
+# launch the version of R packaged in the r docker image, and your files can be executed (we need to specify the command as R as the default is to run Rscript, which is non-interactive
+opensafely exec r R
+opensafely exec python ipython
+
+# clean up any dangling images, containers and volumes
+opensafely clean
+
+
+
 
 You can run this project via [Gitpod](https://gitpod.io) in a web browser by clicking on this badge: [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/JohnGavin/opensafely_template)
 
