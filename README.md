@@ -18,6 +18,7 @@ opensafely exec r R
 opensafely exec python ipython
 
 # clean up any dangling images, containers and volumes
+# https://docs.opensafely.org/opensafely-cli/#disk
 opensafely clean
 
 
